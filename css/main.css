@@ -1,0 +1,266 @@
+body {
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*==========  NAVBAR  ==========*/
+
+#nav {
+  background-color: #425576;
+  padding: 0 100px;
+}
+
+#nav > nav {
+  display: flex;
+  justify-content: space-between;
+}
+  .navigation {
+    display: flex;
+  }
+
+  .nav-btn {
+    padding: 20px 25px;
+    position: relative;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+    line-height: 2;
+  }
+
+  .nav-btn:hover {
+    background-color: #3b4b65;
+  }
+  .nav-btn i {
+    margin-right: 10px;
+    vertical-align: sub;
+  }
+
+  .navigation-user {
+    display: flex;
+  }
+
+  .navigation-user .notifications {
+    border-left: 1px solid #607091;
+    border-right: 1px solid #607091;
+  }
+
+  #nav img {
+    padding: 22px 0;
+  }
+
+  .notif i{
+    color: #fff;
+    padding: 25px;
+    cursor: pointer;
+    border-left: 1px solid #607091;
+    border-right: 1px solid #607091;
+    transition: .3s;
+  }
+  .notif i::after {
+    content: '';
+    background: #fd2b5a;
+    border: 2px solid rgb(66, 85, 118);
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    bottom: 18px;
+    right: 18px;
+    border-radius: 50%;
+  }
+  .notif i:hover {
+    background-color: #3b4b65;
+  }
+
+.dropdown {
+  padding: 12px 0;
+}
+.dropdown > div > div {
+  color: white !important;
+  line-height: 3.3 !important;
+}
+.dropdown svg {
+  top: 12px !important;
+}
+
+.message::before {
+  content: '1';
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.4;
+  color: #fff;
+  background: #fd2b5a;
+  border: 2px solid rgb(66, 85, 118);
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  border-radius: 50%;
+
+}
+
+/*==========  HEADER  ==========*/
+
+header {
+  background-color: #f5f5f5;
+  padding: 50px 100px 70px;
+  border-bottom: 2px solid #e8e8e8;
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-weight: 100;
+}
+
+header i {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+header a {
+  height: 24px;
+  padding: 10px 20px;
+  background-color: #34435a;
+  color: #fff;
+  text-decoration: none;
+  align-self: center;
+}
+
+/*==========  TABS  ==========*/
+
+#tabs {
+  padding: 0 100px;
+  margin: -48px 0 100px 0;
+}
+
+.tabs {
+  background-color: rgb(245, 245, 245);
+  border-bottom: 2px solid rgb(232, 232, 232);
+}
+.singleTab {
+  color: #425575!important;
+  padding: 0 !important;
+  text-transform: none !important;
+}
+
+.tab > div:nth-child(2) {
+  width: 367px !important;
+}
+
+/*==========  TAB's CONTENT  ==========*/
+.tab-content {
+  display: flex;
+}
+.activities p {
+  color: #777777;
+  margin: 35px 0 0 40px;
+}
+
+.job-panel {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  border: 2px solid #e9e9e9;
+  padding: 15px 25px;
+  margin-top: 20px;
+}
+.job-panel .title {
+  color: #262626;
+}
+.job-panel .title:hover > h2{
+  text-decoration: underline;
+}
+.job-panel h2 {
+  display: inline-block;
+  margin-top: 15px;
+}
+.job-panel .job-settings::after {
+  content: url(../img/gear.png);
+  margin-left: 10px;
+}
+.active {
+  display: inline-block;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #04af83;
+  margin-bottom: 1%;
+  margin-right: 10px;
+}
+
+.job-panel-info span {
+  padding: 5px 10px;
+  color: #b7b7b7;
+  margin-right: 10px;
+}
+.new {
+  background-color: #ed355b;
+  color: white !important;
+  text-transform: uppercase;
+}
+
+.city::after {
+  content: '';
+}
+
+.job-panel-stats {
+  display: flex;
+}
+.job-panel-stats p {
+  color: #999999;
+  margin-bottom: -7px;
+}
+.job-stat {
+  padding: 20px 10px 5px;
+  text-align: center;
+  width: 115px;
+  height: 80px;
+}
+.job-stat span {
+  color: #ed355b;
+  font-size: 12px;
+}
+
+.current {
+  border: 2px solid #d6dadd;
+}
+.current p {
+  color: #425575;
+  margin-bottom: -9px;
+}
+
+
+/*==========  OTHER RECRUITMENT  ==========*/
+.other-portals {
+  padding: 0 100px 100px;
+}
+.other-portals > h2 {
+  color: #999999;
+  margin-left: 25px;
+  font-weight: 100;
+}
+.other-portals .job-panel-stats {
+  display: flex;
+}
+
+.other-portals .job-panel-stats > a {
+  line-height: 5px !important;
+  align-self: center;
+  color: #999999;
+  text-decoration: none;
+  transition: .3s ease-in-out;
+}
+.other-portals .job-panel-stats > a:first-child:hover {
+  text-decoration: underline;
+}
+
+.other-portals .import {
+  padding: 20px 30px;
+  background-color: #425575;
+  margin-left: 30px;
+  color: #fff !important;
+}
